@@ -17,4 +17,4 @@ increasing BUFFER_LENGTH in Wire.h and TWI_BUFFER_LENGTH in utility/twi.h.  Incr
 them to 34 for 32-byte writes, and to 66 for 64-byte writes.  Be warned that these
 buffers suck up your memory, so be careful!
 
-<a href="http://www.flickr.com/photos/maniacbug/5576186752/" title="EEPROM_On_Breadboard by maniacbug, on Flickr"><img src="http://farm6.static.flickr.com/5225/5576186752_3418c5249d.jpg" width="500" height="333" alt="EEPROM_On_Breadboard"></a>
+<center><a href="http://www.flickr.com/photos/maniacbug/5576186752/" title="EEPROM_On_Breadboard by maniacbug, on Flickr"><img src="http://farm6.static.flickr.com/5225/5576186752_3418c5249d.jpg" width="500" height="333" alt="EEPROM_On_Breadboard"></a></center>
