@@ -1,8 +1,10 @@
 # Driver for Microchip 24LC256 EEPROM
 
-See documentation at http://maniacbug.github.com/M24LC256/classM24LC256.html
+Please refer to:
 
-See <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf">datasheet</a>
+* [Detailed Documentation](http://maniacbug.github.com/M24LC256/classM24LC256.html)
+* [Source Code](https://github.com/maniacbug/M24LC256)
+* [Chip Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf)
 
 Create one instance of this class for each chip in your circuit.  This allows you
 to have up to 8 of these active at any time.
