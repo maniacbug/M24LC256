@@ -1,0 +1,8 @@
+CVS/
+docs/
+output/
+*.orig
+.cvsignore
+.*.swp
+.*.swo
+*.o
