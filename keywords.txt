@@ -1,0 +1,4 @@
+  M24LC256 KEYWORD1
+  begin KEYWORD2
+  write KEYWORD2
+  read KEYWORD2
