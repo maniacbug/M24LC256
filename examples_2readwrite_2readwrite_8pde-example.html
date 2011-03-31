@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<title>M24LC256: File List</title>
+<title>M24LC256: examples/readwrite/readwrite.pde</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
@@ -29,7 +29,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li id="searchli">
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -49,20 +49,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li class="current"><a href="files.html"><span>File&#160;List</span></a></li>
-    </ul>
-  </div>
 </div>
 <div class="header">
   <div class="headertitle">
-<h1>File List</h1>  </div>
+<h1>examples/readwrite/readwrite.pde</h1>  </div>
 </div>
 <div class="contents">
-<div class="textblock">Here is a list of all documented files with brief descriptions:</div><table>
-  <tr><td class="indexkey"><b>M24LC256.h</b> <a href="M24LC256_8h_source.html">[code]</a></td><td class="indexvalue"></td></tr>
-</table>
+<p>Driver for Microchip 24LC256 EEPROM Please refer to:</p>
+<ul>
+<li><a href="http://maniacbug.github.com/M24LC256/classM24LC256.html">Detailed Documentation</a> </li>
+<li><a href="https://github.com/maniacbug/M24LC256">Source Code</a> </li>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf">Chip Datasheet</a></li>
+</ul>
+<p>Create one instance of this class for each chip in your circuit. This allows you to have up to 8 of these active at any time.</p>
+<p>This class is optimized to take advantage of the page size of the chip. The chip has a 5msec write cycle now matter how many bytes you push it, up to its page size (64 bytes for 24LC256. To get higher throughput, increase the size of the Wire buffer by increasing BUFFER_LENGTH in Wire.h and TWI_BUFFER_LENGTH in utility/twi.h. Increase them to 34 for 32-byte writes, and to 66 for 64-byte writes. Be warned that these buffers suck up your memory, so be careful!</p>
+<p>This is an example of how to use the M24L256 class. It writes a big block of data to the EEPROM, and then slowly reads it out again one little block at a time.</p>
+<div class="fragment"><pre class="fragment"></pre></div> </div>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -78,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed Mar 30 2011 21:01:10 for M24LC256 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed Mar 30 2011 20:58:24 for M24LC256 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>
