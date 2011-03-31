@@ -129,6 +129,13 @@ public:
     uint16_t read(uint16_t location, void* buf, uint16_t len);
 };
 
+/**
+ * @example readwrite.pde
+ * This is an example of how to use the M24L256 class.  It writes a big block of
+ * data to the EEPROM, and then slowly reads it out again one little block
+ * at a time.
+ */
+
 /** @mainpage Driver library for 24LC256 EEPROM
  *
  * See the M24LC256 class for details on how to drive this chip.
