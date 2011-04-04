@@ -11,12 +11,6 @@
 /**
  * Driver for Microchip 24LC256 EEPROM
  *
- * Please refer to:
- *
- * @li <a href="http://maniacbug.github.com/M24LC256/classM24LC256.html">Detailed Documentation</a>
- * @li <a href="https://github.com/maniacbug/M24LC256">Source Code</a>
- * @li <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf">Chip Datasheet</a>
- *
  * Create one instance of this class for each chip in your circuit.  This allows you
  * to have up to 8 of these active at any time.
  *
@@ -138,7 +132,13 @@ public:
 
 /** @mainpage Driver library for 24LC256 EEPROM
  *
- * See the M24LC256 class for details on how to drive this chip.
+ * Please refer to:
+ *
+ * @li <a href="http://maniacbug.github.com/M24LC256/">Documentation Main Page</a>
+ * @li <a href="http://maniacbug.github.com/M24LC256/classM24LC256.html">M24LC256 Class Documentation</a>
+ * @li <a href="https://github.com/maniacbug/M24LC256">Source Code</a>
+ * @li <a href="https://github.com/maniacbug/M24LC256/archives/master">Downloads</a>
+ * @li <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21203Q.pdf">Chip Datasheet</a>
  */
 
 // vim:ci:sw=4 sts=4 ft=cpp
