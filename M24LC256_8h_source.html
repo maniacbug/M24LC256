@@ -69,25 +69,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00008"></a>00008 
 <a name="l00009"></a>00009 <span class="preprocessor">#include &lt;WProgram.h&gt;</span>
 <a name="l00010"></a>00010 
-<a name="l00032"></a><a class="code" href="classM24LC256.html">00032</a> <span class="keyword">class </span><a class="code" href="classM24LC256.html" title="Driver for Microchip 24LC256 EEPROM.">M24LC256</a>
-<a name="l00033"></a>00033 {
-<a name="l00034"></a>00034 <span class="keyword">protected</span>:
-<a name="l00038"></a><a class="code" href="classM24LC256.html#a7554d1748d7b727b8f2069462f1117fd">00038</a>     uint8_t <a class="code" href="classM24LC256.html#a7554d1748d7b727b8f2069462f1117fd" title="The 7-bit address of the particular device we&amp;#39;re driving on the I2C bus.">i2c_address</a>;
-<a name="l00039"></a>00039 
-<a name="l00058"></a>00058     uint16_t <a class="code" href="classM24LC256.html#a863f5acce94696cf1ec1a9a16a9ac5c8" title="Writes a small chunk of data directly to the chip.">WriteChunk</a>(uint16_t location, uint16_t length, uint8_t* data);
-<a name="l00059"></a>00059 
-<a name="l00072"></a>00072     uint16_t <a class="code" href="classM24LC256.html#a1ecca8b860fd05e281f10906dbbfaa41" title="Reads a small chunk of data directly from the chip.">ReadChunk</a>(uint16_t location, uint16_t length, uint8_t* data);
-<a name="l00073"></a>00073 
-<a name="l00075"></a>00075 <span class="keyword">public</span>:
-<a name="l00082"></a>00082     <a class="code" href="classM24LC256.html#aaeab73c2efdccae25f55982d891ca2c6" title="Constructor.">M24LC256</a>(uint8_t _address);
-<a name="l00083"></a>00083 
-<a name="l00093"></a>00093     <span class="keywordtype">void</span> <a class="code" href="classM24LC256.html#a85085de7a16ca547e5aebd8b7e732f4f" title="Setup &amp;amp; prepare.">begin</a>(<span class="keywordtype">void</span>);
-<a name="l00094"></a>00094 
-<a name="l00109"></a>00109     <span class="keywordtype">void</span> <a class="code" href="classM24LC256.html#ae8032c04c209800ea81ca0028e53cd44" title="Write data to any location on the chip.">write</a>(uint16_t location, <span class="keywordtype">void</span>* buf, uint16_t len);
-<a name="l00110"></a>00110 
-<a name="l00129"></a>00129     uint16_t <a class="code" href="classM24LC256.html#a85b734e0712c9f77c92f865e19aa7d84" title="Read data from any location on the chip.">read</a>(uint16_t location, <span class="keywordtype">void</span>* buf, uint16_t len);
-<a name="l00130"></a>00130 };
-<a name="l00131"></a>00131 
+<a name="l00026"></a><a class="code" href="classM24LC256.html">00026</a> <span class="keyword">class </span><a class="code" href="classM24LC256.html" title="Driver for Microchip 24LC256 EEPROM.">M24LC256</a>
+<a name="l00027"></a>00027 {
+<a name="l00028"></a>00028 <span class="keyword">protected</span>:
+<a name="l00032"></a><a class="code" href="classM24LC256.html#a7554d1748d7b727b8f2069462f1117fd">00032</a>     uint8_t <a class="code" href="classM24LC256.html#a7554d1748d7b727b8f2069462f1117fd" title="The 7-bit address of the particular device we&amp;#39;re driving on the I2C bus.">i2c_address</a>;
+<a name="l00033"></a>00033 
+<a name="l00052"></a>00052     uint16_t <a class="code" href="classM24LC256.html#a863f5acce94696cf1ec1a9a16a9ac5c8" title="Writes a small chunk of data directly to the chip.">WriteChunk</a>(uint16_t location, uint16_t length, uint8_t* data);
+<a name="l00053"></a>00053 
+<a name="l00066"></a>00066     uint16_t <a class="code" href="classM24LC256.html#a1ecca8b860fd05e281f10906dbbfaa41" title="Reads a small chunk of data directly from the chip.">ReadChunk</a>(uint16_t location, uint16_t length, uint8_t* data);
+<a name="l00067"></a>00067 
+<a name="l00069"></a>00069 <span class="keyword">public</span>:
+<a name="l00076"></a>00076     <a class="code" href="classM24LC256.html#aaeab73c2efdccae25f55982d891ca2c6" title="Constructor.">M24LC256</a>(uint8_t _address);
+<a name="l00077"></a>00077 
+<a name="l00087"></a>00087     <span class="keywordtype">void</span> <a class="code" href="classM24LC256.html#a85085de7a16ca547e5aebd8b7e732f4f" title="Setup &amp;amp; prepare.">begin</a>(<span class="keywordtype">void</span>);
+<a name="l00088"></a>00088 
+<a name="l00103"></a>00103     <span class="keywordtype">void</span> <a class="code" href="classM24LC256.html#ae8032c04c209800ea81ca0028e53cd44" title="Write data to any location on the chip.">write</a>(uint16_t location, <span class="keywordtype">void</span>* buf, uint16_t len);
+<a name="l00104"></a>00104 
+<a name="l00123"></a>00123     uint16_t <a class="code" href="classM24LC256.html#a85b734e0712c9f77c92f865e19aa7d84" title="Read data from any location on the chip.">read</a>(uint16_t location, <span class="keywordtype">void</span>* buf, uint16_t len);
+<a name="l00124"></a>00124 };
+<a name="l00125"></a>00125 
 <a name="l00144"></a>00144 <span class="comment">// vim:ci:sw=4 sts=4 ft=cpp</span>
 </pre></div></div>
 </div>
@@ -105,7 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed Mar 30 2011 21:01:10 for M24LC256 by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Sun Apr 3 2011 20:45:56 for M24LC256 by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.3 </small></address>
 </body>
