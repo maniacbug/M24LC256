@@ -6,6 +6,12 @@
  version 2 as published by the Free Software Foundation.
  */
 
+/**
+ * This is an example of how to use the M24L256 class.  It writes a big block of
+ * data to the EEPROM, and then slowly reads it out again one little block
+ * at a time.
+ */
+
 #include <Wire.h>
 #include <M24LC256.h>
 
