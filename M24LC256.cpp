@@ -102,7 +102,7 @@ uint16_t M24LC256::ReadChunk(uint16_t location, uint16_t length, uint8_t* data)
     Wire.endTransmission();
 
     Wire.requestFrom(i2c_address,bytes_requested);
-    uint16_t remaining = length;
+    uint16_t remaining = bytes_requested;
     uint8_t* next = data;
 
     while (Wire.available() && remaining--)
@@ -111,7 +111,7 @@ uint16_t M24LC256::ReadChunk(uint16_t location, uint16_t length, uint8_t* data)
         ++bytes_received;
     }
 
-    *next = 0; // null terminate fur debug printing purposes
+    //*next = 0; // null terminate fur debug printing purposes
     //printf("Read %u from %u to %p %s\n",bytes_received,location,data, (char*)data);
 
     delay(1);
